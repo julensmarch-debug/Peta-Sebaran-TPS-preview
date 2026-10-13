@@ -3,48 +3,116 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Peta Sebaran TPS Kota Ternate</title>
-  <meta name="description" content="Peta Sebaran Tempat Penampungan Sementara (TPS) Kota Ternate. Informasi lokasi TPS untuk mendukung pengelolaan sampah yang tertib dan bersih.">
+  <meta name="description" content="Lihat poster dan buka peta lokasi Tempat Penampungan Sementara (TPS) di Kota Ternate.">
+  <meta name="robots" content="index,follow">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Peta Sebaran TPS Kota Ternate">
-  <meta property="og:description" content="Lihat peta sebaran Tempat Penampungan Sementara (TPS) di Kota Ternate. Bersama kita wujudkan Kota Ternate yang bersih.">
+  <meta property="og:description" content="Cari lokasi TPS di Kota Ternate. Buka peta sebaran TPS melalui Google Maps.">
   <meta property="og:image" content="https://julensmarch-debug.github.io/Peta-Sebaran-TPS-preview/Peta%20Sebaran%20TPS%20Kota%20Ternate.jpg">
+  <meta property="og:image:alt" content="Poster Peta Sebaran TPS Kota Ternate">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:url" content="https://julensmarch-debug.github.io/Peta-Sebaran-TPS-preview/">
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 16px;
-      color: #18352a;
-      background: #f3f8f4;
-      text-align: center;
+    * {
+      box-sizing: border-box;
     }
-    h1 { color: #176b43; }
-    img {
+
+    body {
+      margin: 0;
+      padding: 24px 14px 36px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #183c2b;
+      background: #f1f7f1;
+    }
+
+    main {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 8px 0 12px;
+      color: #176b43;
+      font-size: clamp(24px, 4vw, 36px);
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .poster {
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 12px;
       margin: 20px auto;
+      border-radius: 12px;
     }
-    p { line-height: 1.6; }
+
+    .map-button {
+      display: block;
+      width: 100%;
+      margin: 20px auto;
+      padding: 17px 20px;
+      border-radius: 10px;
+      background: #167344;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .map-button:hover {
+      background: #105a35;
+    }
+
+    footer {
+      margin-top: 22px;
+      color: #496454;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Peta Sebaran TPS Kota Ternate</h1>
-  <p>Informasi lokasi Tempat Penampungan Sementara (TPS) untuk mendukung Kota Ternate yang bersih dan tertib.</p>
+  <main>
+    <h1>Peta Sebaran TPS Kota Ternate</h1>
 
-  <img
-    src="Peta%20Sebaran%20TPS%20Kota%20Ternate.jpg"
-    alt="Peta Sebaran TPS Kota Ternate"
-  >
+    <p>
+      Informasi lokasi Tempat Penampungan Sementara (TPS)
+      untuk mendukung Kota Ternate yang bersih dan tertib.
+    </p>
 
-  <p>Dinas Lingkungan Hidup Kota Ternate</p>
+    <img
+      class="poster"
+      src="Peta%20Sebaran%20TPS%20Kota%20Ternate.jpg"
+      alt="Poster Peta Sebaran TPS Kota Ternate"
+    >
+
+    <a
+      class="map-button"
+      href="https://goo.gl/maps/gSMrCizV57Z6yFmn9"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      BUKA PETA SEBARAN TPS
+    </a>
+
+    <p>
+      Tekan tombol di atas untuk melihat peta lokasi TPS
+      melalui Google Maps.
+    </p>
+
+    <footer>
+      Dinas Lingkungan Hidup Kota Ternate
+    </footer>
+  </main>
 </body>
 </html>
